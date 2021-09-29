@@ -346,7 +346,7 @@ class _StartState extends State<Start> {
           padding: EdgeInsets.only(top: 20),
           child: TextButton(
             onPressed: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                   context, MaterialPageRoute(builder: (context) => SignUp()));
             },
             child: RichText(
