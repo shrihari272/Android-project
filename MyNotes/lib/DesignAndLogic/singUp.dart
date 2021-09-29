@@ -102,8 +102,7 @@ class _SignUpState extends State<SignUp> {
             prefixIcon: Icon(
               Icons.email,
               color: Colors.black,
-            )
-            // border: OutlineInputBorder(),
+            ),
             ),
       ),
     );
@@ -284,7 +283,7 @@ class _SignUpState extends State<SignUp> {
           padding: EdgeInsets.only(top: 20),
           child: TextButton(
             onPressed: () {
-              Navigator.push(
+              Navigator.pushReplacement(
                   context, MaterialPageRoute(builder: (context) => Start()));
             },
             child: RichText(
